@@ -19,7 +19,7 @@ document.write(colors);
 colors.splice(1, 0, "orange"); // insert into array
 document.write(colors);
 
-// sort, reverse
+// split, sort, reverse, join
 var fruits = "pineapple, banana, orange";
 fruits = fruits.split(", ");
 fruits.sort();
@@ -27,6 +27,9 @@ document.write(fruits);
 
 fruits.reverse();
 document.write(fruits);
+
+var sortedFruits = fruits.join(", ");
+document.write(sortedFruits);
     </script>
 </body>
 
