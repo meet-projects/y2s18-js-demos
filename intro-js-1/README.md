@@ -31,11 +31,11 @@ document.write("1 / 0 = ", 1 / 0);
 ## `js-strings`
 
 ```js
-var myName = "Matthew Feng"
-var myAge = "19"
+var myName = "Matthew Feng";
 
-myName.substring(0, 7) // ask students how to get my first name
+myName.substring(0, 7); // ask students how to get my first name
 myName.substring(8, 12); // ask students how to get my last name
+
 ```
 
 ## `js-arrays`

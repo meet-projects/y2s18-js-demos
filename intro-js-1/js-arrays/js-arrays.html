@@ -8,9 +8,25 @@
 <body>
     <script>
 var colors = ["red", "yellow", "tree", "blue"];
+colors[2] = "green";
+colors[6] = "pink";
 
+document.write(colors);
+ 
+colors.push("purple"); // add to the end of the array
+document.write(colors);
 
+colors.splice(1, 0, "orange"); // insert into array
+document.write(colors);
+
+// sort, reverse
 var fruits = "pineapple, banana, orange";
+fruits = fruits.split(", ");
+fruits.sort();
+document.write(fruits);
+
+fruits.reverse();
+document.write(fruits);
     </script>
 </body>
 
