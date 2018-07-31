@@ -13,6 +13,7 @@ var person = {
   }
 }
 
+document.write(JSON.stringify(person));
 
 // DEMO 2: String to Object
 var youtubeDataJSON = `
@@ -49,3 +50,6 @@ var youtubeDataJSON = `
     ]
 }
 `
+
+var youtubeData = JSON.parse(youtubeDataJSON);
+// Showcase parts of youtubeData
