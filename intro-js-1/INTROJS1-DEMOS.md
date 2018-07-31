@@ -44,9 +44,13 @@ myName.substring(8, 12); // ask students how to get my last name
 var colors = ["red", "yellow", "tree", "blue"];
 colors[2] = "green";
 colors[6] = "pink";
+
+document.write(colors);
  
 colors.push("purple"); // add to the end of the array
 colors.splice(1, 0, "orange"); // insert into array
+
+document.write(colors);
 
 // sort, reverse
 var fruits = "pineapple, banana, orange";
@@ -57,26 +61,55 @@ fruits.reverse();
 
 ## `js-conds`
 ```js
-
-
+var age = prompt(“What is your age?”);
+if (age <= 12) {
+    document.write(“You are a grade schooler”);
+} else if (age <= 18) {
+    document.write(“You are a teenager”);
+} else {
+    document.write(“You are an adult”);
+}
 ```
 
 ## `js-loops`
 ```js
+var i = 10;
+
+while (!(i % 3 == 2 && (i * i) % 7 == 1)) {
+    i++;
+}
+
+console.log(“The answer is:”, i);
 
 ```
 
 ## `js-funcs`
 ```js
+function sayHello() {
+    document.write("Hello!");
+}
 
+function square(x) {
+    return x * x;
+}
+
+function calculateDistance(x1, y1, x2, y2) {
+    return Math.sqrt(square(x1 - x2) + square(y1 - y2));
+}
 ```
 
 ## `js-errors`
 ```js
-var num;
+var a = prompt("Give a value for 'a': ");
+var b = prompt("Give a value for 'b': ");
+
 try {
-    num.someFunction();
+    if (b == 0) {
+        throw new Error("Can't divide by 0");
+    }
+    var ans = a / b;
+    document.write(a, "/", b, "=", ans);
 } catch (error) {
-    console.log(error.message);
+    document.write(error.message);
 }
 ```

@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>JavaScript Errors</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+<body>
+    <script>
+var a = prompt("Give a value for 'a': ");
+var b = prompt("Give a value for 'b': ");
+
+try {
+    if (b == 0) {
+        throw new Error("Can't divide by 0");
+    }
+    var ans = a / b;
+    document.write(a, "/", b, "=", ans);
+} catch (error) {
+    document.write(error.message);
+}
+    </script>
+</body>
+
+</html>
+
