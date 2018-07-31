@@ -21,7 +21,11 @@ document.write(greeting + ", " + name);
 
 ```js
 var bankBalance = 10;
-alert("I have $" + bankBalance.toFixed(2) + " in my pocket");
+document.write("I have $" + bankBalance.toFixed(2) + " in my pocket");
+
+// Showcase NaN and Infinity
+document.write(Number(""));
+document.write("1 / 0 = ", 1 / 0);
 ```
 
 ## `js-strings`
@@ -42,7 +46,7 @@ colors[2] = "green";
 colors[6] = "pink";
  
 colors.push("purple"); // add to the end of the array
-colors.splice(1, false, "orange"); // insert into array
+colors.splice(1, 0, "orange"); // insert into array
 
 // sort, reverse
 var fruits = "pineapple, banana, orange";
@@ -53,6 +57,8 @@ fruits.reverse();
 
 ## `js-conds`
 ```js
+
+
 ```
 
 ## `js-loops`

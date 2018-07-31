@@ -51,5 +51,15 @@ paragraphs[1].innerHTML = "AWOO, AWOO, AWOO AWOO AWOO!";
 ```
 
 ## `events1`
+```js
+// Can change these functions if you want
+function alertMe() {
+  alert("Hi!");
+}
+
+function changeText(object) {
+  object.innerHTML = "You clicked me!";
+}
+```
 
 ## 
