@@ -2,15 +2,14 @@
 <html>
     <head>
         <title>Bootstrap Tutorial</title>
+        <!-- Add Bootstrap CSS to the page -->
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.css') }}">
+
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
     </head>
 
     <body>
-        <div class="container" style="background-color: red">
-
-        </div>
-
+        <!-- Add JQuery and Bootstrap JS to the page -->
         <script src="{{ url_for('static', filename='jquery.js') }}"></script>
         <script src="{{ url_for('static', filename='bootstrap.bundle.js') }}"></script>
     </body>
